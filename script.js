@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const tableBody = document.getElementById("output");
 
   const loadingRow = document.createElement("tr");
+	loadingRow.id = "loading"; 
   const loadingCell = document.createElement("td");
 
   loadingCell.colSpan = 2;
@@ -37,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     results.forEach((result) => {
       const row = document.createElement("tr");
+		row.id = "loading"; 
       const nameCell = document.createElement("td");
       const timeCell = document.createElement("td");
 
@@ -50,6 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const totalTime = (performance.now() - startTime) / 1000;
 
     const totalRow = document.createElement("tr");
+	  totalRow.id = "loading"; 
     const totalNameCell = document.createElement("td");
     const totalTimeCell = document.createElement("td");
 
